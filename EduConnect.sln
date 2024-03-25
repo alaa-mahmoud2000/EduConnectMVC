@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduConnect", "EduConnect\EduConnect.csproj", "{EFFEDA50-40CE-4A69-9AC5-81DA256632F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFFEDA50-40CE-4A69-9AC5-81DA256632F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFFEDA50-40CE-4A69-9AC5-81DA256632F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFFEDA50-40CE-4A69-9AC5-81DA256632F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFFEDA50-40CE-4A69-9AC5-81DA256632F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF1A51FF-928E-42DC-9DE8-6C053F10E700}
+	EndGlobalSection
+EndGlobal
