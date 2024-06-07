@@ -4,9 +4,9 @@
             <li id="imageLi"><a routerLink=""><img src="assets/colleges/6.png"></a></li>
             <li><a routerLink="">Home</a></li>
             <li><a routerLink="aboutus">About Us</a></li>
-            <li><a href="../colleges/colleges.html">Colleges</a></li>
-            <li><a href="../contact-us/contact-us.html">Contact Us</a></li>
-            <li id="login-btn"><a href="../login/login.html">logIn</a></li>
+            <li><a routerLink="colleges">Colleges</a></li>
+            <li><a routerLink="contactus">Contact Us</a></li>
+            <li id="login-btn"><a routerLink="login">logIn</a></li>
         </ul>
     </nav>
 </header>
@@ -19,84 +19,16 @@
   </div>
 
   <div class="unversity">
-    <div class="aast unv ">
-      <img src="assets/colleges/AAST.jpg" alt="">
-      <div class="text">
-        <p>Over more than 30 years, the AASTMT has had many achievements in education, training and research in the
-          fields of maritime transport, engineering and management sciences. This is due to the methodological
-          application of modern technology in these fields. The AASTMT was thus able to move from regionalism to
-          internationalism. In 2007, the AASTMT was among the institutes that occupied the first six positions on the
-          list of the ISO''s (International Organization for Standardization) international educational institutes who
-          were to receive the Organization''s award for standard levels of higher education.</p>
-        <button>Apply now</button>
+    @for( col of colleges; track col.id){
+      <div class="aast unv">
+        <img [src]="col.id" alt="">
+        <div class="text">
+          <h5>{{ col.name }}</h5>
+          <p>{{ col.address }}</p>
+          <button>Apply now</button>
+        </div>
       </div>
-    </div>
-
-    <div class="auc  unv ">
-      <img src="assets/colleges/AUC.png" alt="">
-      <div class="text">
-        <p>Over more than 30 years, the AASTMT has had many achievements in education, training and research in the
-          fields of maritime transport, engineering and management sciences. This is due to the methodological
-          application of modern technology in these fields. The AASTMT was thus able to move from regionalism to
-          internationalism. In 2007, the AASTMT was among the institutes that occupied the first six positions on the
-          list of the ISO''s (International Organization for Standardization) international educational institutes who
-          were to receive the Organization''s award for standard levels of higher education.</p>
-        <button>Apply now</button>
-      </div>
-    </div>
-
-
-
-    <div class="guc   unv">
-      <img src="assets/colleges/GUC.jpeg" alt="">
-      <div class="text">
-        <p>Over more than 30 years, the AASTMT has had many achievements in education, training and research in the
-          fields of maritime transport, engineering and management sciences. This is due to the methodological
-          application of modern technology in these fields. The AASTMT was thus able to move from regionalism to
-          internationalism. In 2007, the AASTMT was among the institutes that occupied the first six positions on the
-          list of the ISO''s (International Organization for Standardization) international educational institutes who
-          were to receive the Organization''s award for standard levels of higher education.</p>
-        <button>Apply now</button>
-      </div>
-    </div>
-
-    <div class="bue  unv">
-      <img src="assets/colleges/BUE.jpeg" alt="">
-      <div class="text">
-        <p>Over more than 30 years, the AASTMT has had many achievements in education, training and research in the
-          fields of maritime transport, engineering and management sciences. This is due to the methodological
-          application of modern technology in these fields. The AASTMT was thus able to move from regionalism to
-          internationalism. In 2007, the AASTMT was among the institutes that occupied the first six positions on the
-          list of the ISO''s (International Organization for Standardization) international educational institutes who
-          were to receive the Organization''s award for standard levels of higher education.</p>
-        <button>Apply now</button>
-      </div>
-    </div>
-
-    <div class="msa  unv">
-      <img src="assets/colleges/MSA.jpeg" alt="">
-      <div class="text">
-        <p>Over more than 30 years, the AASTMT has had many achievements in education, training and research in the
-          fields of maritime transport, engineering and management sciences. This is due to the methodological
-          application of modern technology in these fields. The AASTMT was thus able to move from regionalism to
-          internationalism. In 2007, the AASTMT was among the institutes that occupied the first six positions on the
-          list of the ISO''s (International Organization for Standardization) international educational institutes who
-          were to receive the Organization''s award for standard levels of higher education.</p>
-        <button>Apply now</button>
-      </div>
-    </div>
-    <div class="aast unv ">
-      <img src="assets/colleges/AAST.jpg" alt="">
-      <div class="text">
-        <p>Over more than 30 years, the AASTMT has had many achievements in education, training and research in the
-          fields of maritime transport, engineering and management sciences. This is due to the methodological
-          application of modern technology in these fields. The AASTMT was thus able to move from regionalism to
-          internationalism. In 2007, the AASTMT was among the institutes that occupied the first six positions on the
-          list of the ISO''s (International Organization for Standardization) international educational institutes who
-          were to receive the Organization''s award for standard levels of higher education.</p>
-        <button>Apply now</button>
-      </div>
-    </div>
+    }
   </div>
 
 
@@ -107,10 +39,10 @@
       </div>
       <div class="footer-list">
         <ul>
-          <li><a href="../home-page/home.html">Home</a></li>
-          <li><a href="../about-us/aboutus.html">AboutUs</a></li>
-          <li><a href="../colleges/colleges.html">Colleges</a></li>
-          <li><a href="../contact-us/contact-us.html">Contact</a></li>
+          <li><a routerLink="/">Home</a></li>
+          <li><a routerLink="aboutus">AboutUs</a></li>
+          <li><a routerLink="colleges">Colleges</a></li>
+          <li><a routerLink="contactus">Contact</a></li>
         </ul>
       </div>
     </div>
