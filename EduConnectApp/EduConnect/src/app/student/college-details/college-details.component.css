@@ -1,0 +1,313 @@
+body
+{
+    background: url("../../../../public/assets/college-details/h2.png");
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: 0px 70px ;
+    background-size:100% 780px ;
+    margin: 0% 0%; 
+}
+.topnav {
+    background-color: #002D62;
+    overflow: hidden;
+    color: #FFFFFF;
+  }
+  
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    margin-top: 10px;
+    margin-right: 5px;
+    text-decoration: none;
+    font-size: 23px;
+  }
+  
+  .topnav a:hover {
+  
+    font-size:xx-large;
+    border-radius: 70%;
+    transition:1s;
+    color: #FFFFFF;
+  }
+  
+
+  .logo
+  {
+   margin-top: 10px;
+   margin-left: 10px;
+  
+  }
+.li
+{
+    
+    float: right;
+    color: #FFFFFF;
+}
+.li a {
+    position: relative;
+    text-decoration: none;
+    padding: 15px;
+    color: #FFFFFF;
+}
+
+.pageone{
+    /* Welcome To Pharos University in Alexandria */
+
+position: absolute;
+width: auto;
+height: 82px;
+left: 72px;
+top: 338px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 37px;
+line-height: 45px;
+text-align: left;
+color: #FFFFFF;
+
+
+}
+.pageonne
+{
+    position: absolute;
+    width: 576px;
+    height: 82px;
+    left: 72px;
+    top: 380px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 45px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.button{
+    /* How To Apply To PUA */
+position: absolute;
+width: auto;
+height: 65px;
+left: 435.73px;
+top: 850px;
+text-align: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 53px;
+line-height: 64px;
+color: #FFFFFF;
+background-color: #002D62;
+}
+.pagelist{
+    /* Colleges financial & administrative Engineering legal studies & international relation Arts & design Tourism & Hotel management Mass communication Language & translation Physical therapy Pharmacy Applied health sciences Technology College of Dentistry Computer science & Artificial intelligence */
+
+position: absolute;
+width: auto;
+height: 698px;
+left: 0px;
+top: 1000px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 39px;
+line-height: 47px;
+
+color: #000000;
+
+
+}
+#intpa{
+    /* International Partners */
+
+position: absolute;
+width: auto;
+height: 68px;
+left: 477px;
+top: 1921px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 43px;
+line-height: 52px;
+
+color: #000000;
+
+
+}
+.img
+{
+position: absolute;
+width: 1060px;
+height: 547px;
+left: 0px;
+top: 2000px;
+
+}
+.imgt
+{
+position: absolute;
+width: 145px;
+height: 143px;
+left: 1120px;
+top: 2191px;
+}
+.showmore
+{
+    /* Show more */
+
+position: absolute;
+width: 206px;
+height: 42px;
+left: 1120px;
+top: 2330px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 35px;
+line-height: 42px;
+
+color: #000000;
+}
+#sturev{
+    /* Student Review */
+
+position: absolute;
+width: 317px;
+height: 56px;
+left: 43px;
+top: 2573px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 37px;
+line-height: 45px;
+
+color: #000000;
+}
+#best{
+    /* The best part about the course is that you always feel the support from all tutors. Questions were always welcomed and discussed. */
+
+position: absolute;
+width:auto;
+height: 102px;
+left: 0px;
+top: 2619px;
+text-align: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 37px;
+
+line-height: 45px;
+background-color: #434343;
+color: #FFFFFF;
+}
+#bestt{
+    position: absolute;
+width:auto;
+height: 280px;
+left: 0px;
+top: 2725px;
+text-align: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 37px;
+
+line-height: 45px;
+outline-color: #000000;
+background-color: #434343;
+color: #FFFFFF;
+}
+#rectanglet{
+    /* Group 2 */
+
+position: absolute;
+width: 100%;
+height:300px;
+left: 0px;
+top: 3050px;
+
+
+background: #002D62;
+border-radius: 3px;
+
+}
+#faceimg{
+    /* image 2 */
+
+position: absolute;
+left: 1136px;
+top: 3225px;
+}
+#instimg
+{
+    /* image 3 */
+
+position: absolute;
+
+left: 1210px;
+top: 3225px;
+}
+#gmailimg
+{
+
+position: absolute;
+left: 1284px;
+top: 3225px;
+}
+#follow
+{
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 400;
+    font-size: 40px;
+    left: 1165px;
+    top: 3100px;
+    color: #FFFFFF;
+}
+#haq{
+    /* Have a question ? */
+
+position: absolute;
+width: 300px;
+height: 38px;
+left: 545px;
+top: 3050px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+
+color: #FFFFFF;
+
+
+}
+#list2{
+    text-align: center;
+    color: #FFFFFF;
+}
+#listtwo{
+   /* Group 6 */
+list-style-type: none;
+position: absolute;
+font-size: 35px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+width: auto;
+height: 63px;
+left: 0px;
+top: 3225px;
+text-decoration: none;
+color: #FFFFFF;
+}

@@ -1,0 +1,124 @@
+
+<div class="navbar">
+    <div class="img">
+        <a routerLink=""><img src="assets/imgFotter/EDULOGO.png" style="width: 200px;height:auto;" alt="logo"></a>
+    </div>
+    <div class="list">
+        <ul>
+            <li><a href="http://localhost:4200/">Home</a></li>
+      <li><a href="http://localhost:4200/aboutus">AboutUs</a></li>
+      <li><a href="http://localhost:4200/colleges">Colleges</a></li>
+      <li><a href="http://localhost:4200/contactus">Contact</a></li>  
+      @if(!IsLoggedIn){
+        <li><a routerLink="login"><button>login</button></a></li>
+      }@else {
+        <div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bi bi-person-fill"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" routerLink="colleges">Colleges</a>
+            </div>
+          </div>
+        </div>
+      }    
+    </ul>
+    </div>
+</div>
+
+<div class="about">
+    <div class="about-img">
+        <img src="assets/aboutus/1.jpg" alt="aboutus">
+    </div>
+    <div class="about-text">
+        <h1>About Us</h1>
+        <p>A knowledge for people who want pay less and learn more </p>
+
+    </div>
+</div>
+
+
+<div class="info">
+
+    <div class="info-text">
+        <h2> WE ARE EDU CONNECT </h2>
+        <p>
+            We gathers all the universities in Alexandria
+            <br>&Cairo. It aims to assist students, including General
+            <br> Secondary Certificate students, American
+            <br>curriculum students, and International General
+            <br> Certificate of Secondary Education (IG) students.
+        </p>
+    </div>
+
+    <div class="info-img">
+        <img src="assets/aboutus/2.png" alt="info">
+    </div>
+</div>
+
+
+<div class="sec-info">
+    <div class="relative">
+        <div class="absolute">
+            <img src="assets/aboutus/3.png" alt="">
+        </div>
+    </div>
+    <div class="sec-info-text">
+        <h2> We are Future of Education</h2>
+        <p>
+            You are definitely intrigued to discover who we are.
+            We are Smart Education
+            - future of education. We have the best knowledge base for you study.
+            Whether you are a prospective student or already taking classes,
+            feel free to explore and see what makes Smart Education so special.
+
+        </p>
+    </div>
+
+</div>
+
+
+
+
+<div class="our-popular">
+
+    <h2>Our Popular Courses</h2>
+
+    <img src="assets/aboutus/4.png" alt="">
+
+</div>
+
+
+
+<div class="footer">
+  <div class="first-section">
+    <div class="footer-text">
+        <h2>HAVE A QUESTION</h2>
+    </div>
+    <div class="footer-list">
+        <ul>
+            <li><a href="http://localhost:4200/">Home</a></li>
+      <li><a href="http://localhost:4200/aboutus">AboutUs</a></li>
+      <li><a href="http://localhost:4200/colleges">Colleges</a></li>
+      <li><a href="http://localhost:4200/contactus">Contact</a></li>  
+        </ul>
+    </div>
+  </div>
+
+    <div class="second-section">
+        <div class="footer-text">
+            <h2>follow us</h2>
+        </div>
+        <div class="footer-list">
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="assets/imgFotter/facebook.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/"><img src="assets/imgFotter/gmail.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/"><img src="assets/imgFotter/instagram.png" alt=""></a></li>
+            </ul>
+        </div>
+</div>
+
+</div>
+
+

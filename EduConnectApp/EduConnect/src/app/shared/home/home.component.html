@@ -1,0 +1,126 @@
+
+
+<div class="navbar">
+  <div class="img">
+    <a routerLink="home"><img src="assets/imgFotter/EDULOGO.png" style="width:200px;height:auto;" alt="logo"></a>
+  </div>
+  <div class="list">
+      <ul>
+        <li><a routerLink="home">Home</a></li>
+        <li><a routerLink="aboutus">AboutUs</a></li>
+        <li><a routerLink="colleges">Colleges</a></li>
+        <li><a routerLink="contactus">Contact</a></li> 
+        @if(!IsLoggedIn){
+          <li><a routerLink="login"><button>login</button></a></li>
+        }@else {
+          <div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="bi bi-person-fill"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" routerLink="colleges">Colleges</a>
+              </div>
+            </div>
+          </div>
+        }
+      </ul>
+  </div>
+  
+</div>
+
+<div class="home">
+    <div class="home-img">
+      <img src="assets/home/2.png" alt="homeus">
+  </div>
+
+
+
+  
+  <div class="home-text">
+    <h1>Welcome To Edu connect </h1>
+       <ul>
+      <button>Area of Study</button>
+      <button>city</button>
+      <button>score</button>
+      <button>budget</button>
+
+      <input type="text" placeholder="Search for a university">
+     </ul>
+
+    </div>
+
+ 
+
+
+</div>
+
+<div class="enroll">
+  <img src="assets/home/4.jpeg" alt="">
+  <img src="assets/home/3.png" alt="aboutus">
+</div>
+
+
+
+<div class="why">
+  <div class="why-text">
+    <h2>Why Would You Choose edu Connect? </h2>
+
+    <p>
+    Edu connect is a website that gathers all the universities in <br> 
+      Alexandria & cairo<br>
+    It aims to assist students, including General Secondary 
+    <br> Certificate (Thanaweya Amma) students, American curriculum <br>
+    students , and International General Certificate of Secondary <br> 
+    Education (IG) students.<br>
+    The website will be beneficial for 
+    students who are searching for <br> universities and comprehensive information about the<br>
+     universities they are interested in.<br>
+    Many students need something that can help them choose the<br> right university and understand the <br>
+    admission requirements.
+  </p>
+  </div>
+  <img src="assets/home/1.png" alt="">
+</div>
+  
+
+<div class="coll">
+  <ul>
+    <li><img class="smlImg" id="smlImg" src="assets/home/f.png" alt=""></li>
+    <li><img src="assets/home/a.png" alt=""></li>
+    <li><img src="assets/home/b.png" alt=""></li>
+    <li><img src="assets/home/e.png" alt=""></li>
+    <li><img src="assets/home/c.png" alt=""></li>
+    <li><img src="assets/home/d.png" alt=""></li>
+  </ul>
+</div>
+
+<div class="footer">
+  <div class="first-section">
+    <div class="footer-text">
+        <h2>HAVE A QUESTION</h2>
+    </div>
+    <div class="footer-list">
+        <ul>
+            <li><a routerLink="home">Home</a></li>
+            <li><a routerLink="aboutus">AboutUs</a></li>
+            <li><a routerLink="colleges">Colleges</a></li>
+            <li><a routerLink="contactus">Contact</a></li>
+        </ul>
+    </div>
+  </div>
+
+    <div class="second-section">
+        <div class="footer-text">
+            <h2>follow us</h2>
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li><a href="https://www.facebook.com/"><img src="assets/imgFotter/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/"><img src="assets/imgFotter/gmail.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/"><img src="assets/imgFotter/instagram.png" alt=""></a></li>
+        </ul>
+        </div>
+</div>
+
+</div>

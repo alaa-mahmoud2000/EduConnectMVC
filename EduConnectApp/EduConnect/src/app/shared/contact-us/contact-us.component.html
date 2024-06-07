@@ -1,0 +1,91 @@
+<div class="wrapper">
+    <header>
+        <nav class="main-navbar">
+            <ul class="nav-ul">
+                <li id="imageLi"><a href="http://localhost:4200/contactus"><img src="assets/contactus/6.png"></a></li>
+                <li><a routerLink="home">Home</a></li>
+                <li><a routerLink="aboutus">About Us</a></li>
+                <li><a routerLink="colleges">Colleges</a></li>
+                <li><a routerLink="contactus">Contact Us</a></li>
+                @if(!IsLoggedIn){
+                    <li><a routerLink="login"><button>login</button></a></li>
+                  }@else {
+                    <div>
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="bi bi-person-fill"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" routerLink="colleges">Colleges</a>
+                        </div>
+                      </div>
+                    </div>
+                  }
+                </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <section class="col-md-6 firstCol">
+               <div>
+                <ul>
+                    <li><i class="fa-regular fa-envelope"></i></li>
+                    <li>Email<br> <span class="" style="display: block;
+                        font-size: 20px;
+                        color: #666; 
+                        margin-top: 0px;">educonnectgmail.com</span></li><br>
+                </ul>
+               </div>
+            </section>
+
+            <section class="col-md-6 secCol">
+                
+                <form >
+                    <h2>Leave Us a Message</h2>
+                    <input type="text" id="name" name="name" placeholder="name" required><br>
+
+                    <input type="email" id="email" name="email" placeholder="email" required><br>
+
+                    <input type="text" id="message" name="message" placeholder="message"><br>
+
+                    <button type="submit">SEND</button>
+                </form>
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+<div class="footer">
+    <div class="first-section">
+      <div class="footer-text">
+          <h2>HAVE A QUESTION</h2>
+      </div>
+      <div class="footer-list">
+          <ul>
+              <li><a routerLink="home">Home</a></li>
+              <li><a routerLink="aboutus">AboutUs</a></li>
+              <li><a routerLink="colleges">Colleges</a></li>
+              <li><a routerLink="contactus">Contact</a></li>
+          </ul>
+      </div>
+    </div>
+
+      <div class="second-section">
+          <div class="footer-text">
+              <h2>follow us</h2>
+          </div>
+          <div class="footer-list">
+            <ul>
+              <li><a href="https://www.facebook.com/"><img src="assets/imgFotter/facebook.png" alt=""></a></li>
+              <li><a href="https://www.instagram.com/"><img src="assets/imgFotter/gmail.png" alt=""></a></li>
+              <li><a href="https://www.instagram.com/"><img src="assets/imgFotter/instagram.png" alt=""></a></li>
+          </ul>
+          </div>
+  </div>
+
+  </div>
+<script src="../js/bootstrap.min.js"></script>

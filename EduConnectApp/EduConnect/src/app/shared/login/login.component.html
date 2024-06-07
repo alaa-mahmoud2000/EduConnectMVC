@@ -1,0 +1,75 @@
+<div class="wrapper">
+    <header>
+        <nav class="main-navbar d-flex justify-content-center align-items-center  ">
+            <ul class="nav-ul">
+                <li id="imageLi"><a href="../home-page/home.html"><img src="assets/login/6.png"></a></li>
+                <li><a routerLink="home">Home</a></li>
+                <li><a href="../about-us/about.html">AboutUs</a></li>
+                <li><a href="../colleges/colleges.html">Colleges</a></li>
+                <li><a href="../contact-us/contact-us.html">ContactUs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="login-container d-flex align-items-center justify-content-around" >
+        <div class="row ">
+            <div class="col imgCol">
+                <img src="assets/login/girl.png" alt="Girl Image">
+            </div>
+            <div class="col-md-6 formCol ">
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="d-flex flex-column">
+                    <h3 class="headings">Welcome to EDu-connect</h3>
+                    <br>
+                    <h2 class="headings">LOGIN</h2>
+                    <br><br>
+                    <div class="mb-2 input-1">
+                      <input type="text" class="form-control" formControlName="email" placeholder="email">
+                      <div *ngIf="loginForm.controls['email'].invalid && loginForm.controls['email'].touched" class="text-danger">
+                        Email is required.
+                      </div>
+                    </div>
+                    <br>
+                    <div class="mb-3 input-1">
+                      <input type="password" class="form-control" formControlName="password" placeholder="Password">
+                      <div *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched" class="text-danger">
+                        Password is required and must be at least 6 characters.
+                      </div>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-danger w-25 m-auto" [disabled]="loginForm.invalid">Login</button>
+                    <br><br><br>
+                    <span class="accCheck dontHave">Don't have an account? <a routerLink="signup">Sign up</a></span>
+                  </form>                  
+            </div>
+        </div>
+    </main>
+
+</div>
+<div class="footer">
+    <div class="first-section">
+      <div class="footer-text">
+          <h2>HAVE A QUESTION</h2>
+      </div>
+      <div class="footer-list">
+          <ul>
+              <li><a routerLink="home">Home</a></li>
+              <li><a href="../about-us/aboutus.html">AboutUs</a></li>
+              <li><a href="../colleges/colleges.html">Colleges</a></li>
+              <li><a href="../contact-us/contact-us.html">Contact</a></li>
+          </ul>
+      </div>
+    </div>
+
+      <div class="second-section">
+          <div class="footer-text">
+              <h2>follow us</h2>
+          </div>
+          <div class="footer-list">
+            <ul>
+              <li><a href="https://www.facebook.com/"><img src="assets/imgFotter/facebook.png" alt=""></a></li>
+              <li><a href="https://www.instagram.com/"><img src="assets/imgFotter/gmail.png" alt=""></a></li>
+              <li><a href="https://www.instagram.com/"><img src="assets/imgFotter/instagram.png" alt=""></a></li>
+          </ul>
+          </div>
+  </div>
+
+  </div>
