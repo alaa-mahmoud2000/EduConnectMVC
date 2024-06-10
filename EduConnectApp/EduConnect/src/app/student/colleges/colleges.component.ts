@@ -11,7 +11,6 @@ import { ToastrService } from 'ngx-toastr';
 export class CollegesComponent {
   colleges : ICollege[] = [];
   constructor(private apiService : EduApiService , private toastr : ToastrService){
-
   }
   ngOnInit(){
     this.apiService.getColleges().subscribe({
@@ -19,7 +18,7 @@ export class CollegesComponent {
         this.colleges = response;
       },
       error: (error) => {
-        this.toastr.error('Error' + error.error , 'Error');
+        this.toastr.error('Error loading data , try again later.');
       }
     });
   }

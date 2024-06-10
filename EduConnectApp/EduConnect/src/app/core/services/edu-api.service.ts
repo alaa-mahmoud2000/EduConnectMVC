@@ -9,6 +9,9 @@ import { catchError, map } from 'rxjs/operators';
 })
 export class EduApiService {
   private baseUrl : string = "http://localhost:8800/api/";
+  private options = {
+    withCredentials: true
+  };  
   colleges : ICollege[] = [];
   
   constructor(private httpClient : HttpClient) { }
@@ -18,7 +21,7 @@ export class EduApiService {
   }
 
   getColleges() : Observable<ICollege[]>{
-    return this.httpClient.get<ICollege[]>(this.baseUrl + "college/getallbypage/1/5")
+    return this.httpClient.get<ICollege[]>(this.baseUrl + "college/getallbypage/1/5" , this.options)
       .pipe(
         map(colleges => colleges),
         catchError(error => {

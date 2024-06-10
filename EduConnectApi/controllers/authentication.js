@@ -3,7 +3,6 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 export const registerStudent = (req, res) => {
-    //CHECK USER IF EXISTS
   
     const q = "SELECT * FROM student WHERE Email = ?";
     //console.log(req.body)
@@ -63,7 +62,8 @@ export const login = (req, res) => {
         "School" : data[0].School,
         "Budget" : data[0].Score,
         "Address" : data[0].Address,
-        "EduType" : data[0].EduType
+        "EduType" : data[0].EduType,
+        "tkn": token
       };
   
       res.cookie("accessToken", token, {

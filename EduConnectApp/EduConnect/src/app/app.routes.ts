@@ -10,7 +10,7 @@ import { notLoggedInGuard } from './core/guards/not-logged-in.guard';
 
 export const routes: Routes = [
     {path: "" , component: HomeComponent},
-    {path : "login", component : LoginComponent , canActivate: [notLoggedInGuard]},
+    {path : "login", component : LoginComponent , canActivate: [notLoggedInGuard] },
     {path: "signup" , component: SignupComponent , canActivate: [notLoggedInGuard]},
     {path: "contactus" , component: ContactUsComponent},
     {path: "aboutus" , component: AboutUsComponent},

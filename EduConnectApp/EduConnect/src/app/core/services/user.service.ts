@@ -7,7 +7,6 @@ export class UserService {
   private userData: any = null; // Store user data in memory
 
   constructor() {
-    // Load data from localStorage on service initialization (if available)
     this.loadUserData();
   }
 
@@ -18,6 +17,12 @@ export class UserService {
 
   getUserData(): any {
     return this.userData;
+  }
+
+  getToken(){
+    this.loadUserData();
+    console.log(this.userData);
+    if(this.userData){ return this.userData.tkn; } else { return null; }
   }
 
   clearUserData() {

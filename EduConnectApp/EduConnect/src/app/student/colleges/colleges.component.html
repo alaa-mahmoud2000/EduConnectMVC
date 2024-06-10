@@ -19,12 +19,12 @@
   </div>
 
   <div class="unversity">
-    @for( col of colleges; track col.id){
+    @for( col of colleges; track col.Id){
       <div class="aast unv">
-        <img [src]="col.id" alt="">
+        <img [src]="col.Image" alt="">
         <div class="text">
-          <h5>{{ col.name }}</h5>
-          <p>{{ col.address }}</p>
+          <h5 >{{ col.Name }}</h5>
+          <p>{{ col.Descrption }}</p>
           <button>Apply now</button>
         </div>
       </div>

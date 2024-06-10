@@ -1,10 +1,13 @@
 export interface ICollege {
-    id: number,
-    name: string,
-    address: string, 
-    fees: number,
-    contactNumber: string,
-    university: string
+    Id: number,
+    Name: string,
+    Fees: number,
+    Address: string, 
+    Rank: number,
+    ContactNumber: string,
+    university: string,
+    Image: string,
+    Descrption: string
 }
 
 export interface IStudent{
@@ -104,5 +107,6 @@ export interface IStudentInfo {
     School : string,
     Score : number,
     Address : string,
-    EduType : string
+    EduType : string,
+    tkn : string
 }

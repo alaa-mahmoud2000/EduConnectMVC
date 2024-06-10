@@ -1,1 +1,6 @@
 @import 'ngx-toastr/toastr';
+
+
+h5{
+    text-align: left !important;
+}
