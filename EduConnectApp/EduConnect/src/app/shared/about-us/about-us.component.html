@@ -10,18 +10,9 @@
       <li><a href="http://localhost:4200/colleges">Colleges</a></li>
       <li><a href="http://localhost:4200/contactus">Contact</a></li>  
       @if(!IsLoggedIn){
-        <li><a routerLink="login"><button>login</button></a></li>
+        <li><a  href="http://localhost:4200/login"><button class="loginBtn">login</button></a></li>
       }@else {
-        <div>
-          <div class="btn-group">
-            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="bi bi-person-fill"></i>
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" routerLink="colleges">Colleges</a>
-            </div>
-          </div>
-        </div>
+        <li><a><button (click)="LogoutUser()" >logout</button></a></li>
       }    
     </ul>
     </div>

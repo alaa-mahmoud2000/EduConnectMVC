@@ -11,18 +11,9 @@
         <li><a routerLink="colleges">Colleges</a></li>
         <li><a routerLink="contactus">Contact</a></li> 
         @if(!IsLoggedIn){
-          <li><a routerLink="login"><button>login</button></a></li>
+          <li><a routerLink="login"><button>Login</button></a></li>
         }@else {
-          <div>
-            <div class="btn-group">
-              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="bi bi-person-fill"></i>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" routerLink="colleges">Colleges</a>
-              </div>
-            </div>
-          </div>
+          <li><button (click)="LogoutUser()" >Logout</button></li>
         }
       </ul>
   </div>
@@ -39,18 +30,53 @@
   
   <div class="home-text">
     <h1>Welcome To Edu connect </h1>
-       <ul>
-      <button>Area of Study</button>
-      <button>city</button>
-      <button>score</button>
-      <button>budget</button>
+    <div class="inputs" >
+    <ul>
 
-      <input type="text" placeholder="Search for a university">
-     </ul>
+      <div class="first-li">
+        <li>
+          <label for="areaOfStudy">AreaofStudy:</label>
+          <select id="areaOfStudy" name="areaOfStudy">
+              <option value="science">Science</option>
+              <option value="arts">Arts</option>
+              <option value="commerce">Commerce</option>
+          </select>
+      </li>
+      <li>
+          <label for="city">city</label>
+
+          <select id="City" class="city"  name="City">
+              <option value="science">Science</option>
+              <option value="arts">Arts</option>
+              <option value="commerce">Commerce</option>
+          </select>
+        
+      </li>
+      </div>
+       
+
+      <div class="second-li">
+        <li>
+          <label for="score">Score:</label>
+          <input type="text" id="score"   name="score">
+      </li>
+      <li>
+          <label for="budget">Budget:</label>
+          <input type="text" id="budget" name="budget">
+      </li>
+     
+      </div>
+      <div>
+       
+      </div>
+       
+    </ul> 
+    <button type="submit">Search</button>
+
+  </div>
 
     </div>
 
- 
 
 
 </div>

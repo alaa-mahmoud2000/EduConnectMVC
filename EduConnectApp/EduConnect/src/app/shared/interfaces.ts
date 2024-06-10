@@ -7,7 +7,7 @@ export interface ICollege {
     ContactNumber: string,
     university: string,
     Image: string,
-    Descrption: string
+    Description: string
 }
 
 export interface IStudent{

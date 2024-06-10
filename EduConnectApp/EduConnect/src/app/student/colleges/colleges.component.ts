@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { EduApiService } from '../../core/services/edu-api.service';
 import { ICollege } from '../../shared/interfaces';
 import { ToastrService } from 'ngx-toastr';
+import { UserService } from '../../core/services/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-colleges',
@@ -10,9 +12,15 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class CollegesComponent {
   colleges : ICollege[] = [];
-  constructor(private apiService : EduApiService , private toastr : ToastrService){
+  IsLoggedIn : boolean = false;
+  userProfile : any;
+
+  constructor(private apiService : EduApiService , private toastr : ToastrService, private userService : UserService , private router: Router){
   }
+  
   ngOnInit(){
+    this.IsLoggedIn = this.userService.isUserLoggedIn();
+    this.userProfile = this.userService.getUserData();
     this.apiService.getColleges().subscribe({
       next: (response) => {
         this.colleges = response;
@@ -21,5 +29,9 @@ export class CollegesComponent {
         this.toastr.error('Error loading data , try again later.');
       }
     });
+  }
+  LogoutUser() {
+    this.userService.clearUserData();
+    return this.router.navigate(['login']);  
   }
 }

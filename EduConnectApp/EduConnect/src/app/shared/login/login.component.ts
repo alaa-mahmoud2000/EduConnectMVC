@@ -17,7 +17,7 @@ export class LoginComponent {
     private fb: FormBuilder,
     private router: Router,
     private toastr: ToastrService,
-    private authService: EduApiService,
+    private eduAPIService: EduApiService,
     private userService: UserService
   ) {}
 
@@ -32,7 +32,7 @@ export class LoginComponent {
   onSubmit() {
     if (this.loginForm.valid) {
       const formData = this.loginForm.value;
-      this.authService.login(formData).subscribe({
+      this.eduAPIService.login(formData).subscribe({
         next: (response) => {
           this.userService.setUserData(response);
           this.toastr.success('Login successful', 'Success');

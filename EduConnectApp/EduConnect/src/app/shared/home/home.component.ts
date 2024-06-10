@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UserService } from '../../core/services/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,16 +8,18 @@ import { UserService } from '../../core/services/user.service';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
   IsLoggedIn : boolean = false;
   userProfile : any;
-  constructor(private userService : UserService){
+  constructor(private userService : UserService , private router: Router){
 
   }
   ngOnInit(){
     this.IsLoggedIn = this.userService.isUserLoggedIn();
     this.userProfile = this.userService.getUserData();
-    console.log(this.IsLoggedIn);
-    console.log(this.userProfile)
   }
-
+  LogoutUser() {
+    this.userService.clearUserData();
+    return this.router.navigate(['login']);  
+  }
 }

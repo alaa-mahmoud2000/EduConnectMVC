@@ -8,10 +8,7 @@ body{
   a {
     text-decoration: none;
     color: #d9dce0;
-    font-family: 'Poppins', sans-serif;
-  
-  
-  
+    font-family: 'Poppins', sans-serif;  
   }
   
   li {
@@ -59,7 +56,6 @@ body{
   
   }
   
-  
   .navbar {
   
     display: flex;
@@ -88,7 +84,6 @@ body{
   .navbar .img {
     padding-top: 10px;
     margin: 20px;
-  
   }
   
   .navbar .list button{
@@ -142,60 +137,116 @@ body{
   }
   
   .home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    padding: 20px;
+    align-items: center;
+    /* padding-bottom: 100px;/ */
+    
+    /* background-color: blue; */
+    width: 100%;
+    /* height: %; */
+    
+     
+    }    
+  
+    .home-text {
+      text-align: center;
+      color: white;
+    }
+    
+    .home-text h1 {
+      margin: 0;
+      padding: 1rem;
+      font-size: 49px;
+      font-weight: 700;
+    }
+    
+    
+.inputs ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center; 
+  padding: 20px;
+}
+
+
+
+
+
+.inputs ul li {
   display: flex;
   flex-direction: column;
-  flex-direction: space-evenly;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  /* height: %; */
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+
+}
+
+.inputs label {
+  width:100% ;
+  padding: 20px;
+
+}
+
+.inputs select,
+.inputs input[type="text"] {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.inputs button {
+  width: 20%;
+  padding: 10px;
   
-   
-  }
-  
-  
-  .inputs ul{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.first-li, .second-li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* background-color: #007bff; */
+
+}
+@media screen and (max-width: 780px) {
+  .home{
     display: flex;
-    /* flex-direction: column; */
-    justify-content:space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-top: 20px;  
     width: 100%;
-    margin-left: 20px;
-  }
-  .inputs ul button{
-    background-color:red;
-  
-    color: rgb(220, 18, 18);
-    padding: 1.5px;
-    width: 100px;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
   }
   
   .home-text h1 {
-    margin: 0;
-    padding: 1rem;
+    margin: 0px;
+    padding: 0px;
     font-size: 49px;
     font-weight: 700;
     color: white;
   }
   
-  
-  .home-text ul button{
-  border:none;
-  /* background: transparent; */
-  font-weight: bold;
-  
-  
-  }
-  .home-text p {
-    font-size: 30px;
-    /* white-space: nowrap; */
-  ;   
-  }
+}
+
   
   @media screen and (max-width: 1200px) {
     .home{
@@ -206,15 +257,25 @@ body{
       padding-top: 20px;  
       width: 100%;
     }
-    .inputs ul{
+    
+    .home-text h1 {
+      margin: 0px;
+      padding: 0px;
+      font-size: 49px;
+      font-weight: 700;
+      color: white;
+    }
+  
+    .first-li, .second-li {
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
-  
-  
-      
+      align-items: center;
+      justify-content: center;
     }
+  
+  
     .inputs ul button{
+      text-align: center;
       background-color: #fff;
       color: black;
       width: 100px;
@@ -223,20 +284,41 @@ body{
       cursor: pointer;
     }
   
-    .input {
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* background-color: #007bff; */
+  
+    }
+  
+    .inputs ul {
       display: flex;
       flex-direction: row;
+      padding: 0px;
+    }
+  
+    .inputs ul li {
+      padding:0px;
+      margin: 0px;
+    }
+  
+    .inputs button{
+      width: 100px;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
     .home-text {
       display: flex;
       flex-direction: column;
-      justify-content: end;
+      justify-content: center;
       align-items: center;
-      width: 100%;
-      text-align: center;
-      /* height: %; */
-      
-       
+      padding: 0px;
       }
       .navbar .img img {
         /* margin: 20px; */
@@ -249,7 +331,7 @@ body{
         margin: 20px;
     
     }
-    
+  
   }
   
   

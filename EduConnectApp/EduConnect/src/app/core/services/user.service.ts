@@ -26,6 +26,7 @@ export class UserService {
   }
 
   clearUserData() {
+    console.log("inside user clear")
     this.userData = null;
     localStorage.removeItem('userData');
   }

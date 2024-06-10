@@ -1,12 +1,16 @@
 <header>
     <nav class="main-navbar">
         <ul class="nav-ul">
-            <li id="imageLi"><a routerLink=""><img src="assets/colleges/6.png"></a></li>
-            <li><a routerLink="">Home</a></li>
-            <li><a routerLink="aboutus">About Us</a></li>
-            <li><a routerLink="colleges">Colleges</a></li>
-            <li><a routerLink="contactus">Contact Us</a></li>
-            <li id="login-btn"><a routerLink="login">logIn</a></li>
+            <li id="imageLi"><a href="http://localhost:4200/"><img src="assets/colleges/6.png"></a></li>
+            <li><a href="http://localhost:4200/">Home</a></li>
+            <li><a href="http://localhost:4200/aboutus">About Us</a></li>
+            <li><a href="http://localhost:4200/colleges">Colleges</a></li>
+            <li><a href="http://localhost:4200/contactus">Contact Us</a></li>
+            @if(IsLoggedIn){
+              <li id="login-btn"><a href="http://localhost:4200/login">logIn</a></li>
+            }@else {
+              <li (onclick)="LogoutUser()"><a>logout</a></li>
+            }
         </ul>
     </nav>
 </header>
@@ -22,9 +26,8 @@
     @for( col of colleges; track col.Id){
       <div class="aast unv">
         <img [src]="col.Image" alt="">
-        <div class="text">
-          <h5 >{{ col.Name }}</h5>
-          <p>{{ col.Descrption }}</p>
+        <div class="text">          
+          <p>{{ col.Description }}</p>
           <button>Apply now</button>
         </div>
       </div>
