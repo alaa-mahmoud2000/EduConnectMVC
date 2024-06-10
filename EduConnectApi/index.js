@@ -13,7 +13,8 @@ import cors from "cors";
 app.use(express.json());
 app.use(cookieParser());
 
-app.use(cors({ origin: 'http://localhost:4200', credentials: true}));
+// app.use(cors({ origin: 'http://localhost:4200', credentials: true}));
+app.use(cors());
 
 // Routing 
 app.use("/api/college", collegeRoutes);
